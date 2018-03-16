@@ -15,7 +15,7 @@ var regExpForSubtraction = new RegExp("^subtract");
 var regExpForMultiplication = new RegExp("^multiply");
 var regExpForHelp = new RegExp("^help..");
 
-// ajaira commit 01
+// vuaa commit 02
 
 stdin.addListener("data", function (d) {
     var userInputString = d.toString().trim();
