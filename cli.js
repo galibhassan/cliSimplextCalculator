@@ -2,18 +2,20 @@
 var stdin = process.openStdin();
 
 console.log(".--------------------------.");
-console.log("|   CLI Calculator 1.0.0   |    \t\t Arithmatic was never so simple.")
+console.log("|   Dumb Calculator 1.0.0  |    \t Arithmatic was never so simple.")
 console.log("^--------------------------^");
 console.log("");
 console.log("For instruction, type: \t\t\t instruct..");
 console.log("For a specific functionality, type: \t help.. nameOfThatFunctionality");
 console.log("To quit, type: \t\t\t\t Ctrl+C");
+console.log("-----------------------------")
 console.log("");
 var regExpForAddition = new RegExp("^add");
 var regExpForSubtraction = new RegExp("^subtract");
 var regExpForMultiplication = new RegExp("^multiply");
 var regExpForHelp = new RegExp("^help..");
 
+// ajaira commit 01
 
 stdin.addListener("data", function (d) {
     var userInputString = d.toString().trim();
@@ -73,4 +75,5 @@ stdin.addListener("data", function (d) {
     function findHelpKeywordFrom(theString) {
         return theString.split("help.. ")[1];
     }
+    console.log(">>\n");
 });
